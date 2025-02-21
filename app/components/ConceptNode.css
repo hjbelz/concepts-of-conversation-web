@@ -1,0 +1,70 @@
+/**
+ * Styles for the ConceptNode component.
+ */
+
+.concept-node {
+  font-family: "Noto Sans", serif;
+  line-height: normal;
+  color: #171D33;
+
+  display: flex;
+  width: 440px;
+  min-width: 400px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  border-radius: 8px;
+  background-color: #94A6E5;
+}
+
+.concept-node__header-box {
+  padding: 8px;
+}
+
+.concept-node__text-box {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 0px 0px 8px 8px;  
+  background-color: #CCD7FF;
+}
+
+.concept-node__text-box p {
+  color: #171D33;
+
+  font-size: 14px;
+  font-weight: 400;  
+  font-style: normal;
+}
+
+.concept-node h2 {
+  color: #2E3A66;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  
+}
+
+.concept-node__title-variant {
+  color: #171D33;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.concept-node h3 {
+  color: #171D33;
+  
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: 62.5%;
+  letter-spacing: 0.15px;
+}
