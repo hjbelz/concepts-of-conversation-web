@@ -5,10 +5,10 @@ interface ConceptNodeProps {
   title: string;
   titleVariant?: string;
   subtitle: string;
-  text: string;
+  children: React.ReactNode;
 }
 
-const ConceptNode: React.FC<ConceptNodeProps> = ({ title, titleVariant, subtitle, text }) => {
+const ConceptNode: React.FC<ConceptNodeProps> = ({ title, titleVariant, subtitle, children }) => {
 
 
   return (
@@ -18,7 +18,7 @@ const ConceptNode: React.FC<ConceptNodeProps> = ({ title, titleVariant, subtitle
         <h3 className="concept-node__subtitle">{subtitle}</h3>
       </div>
       <div className="concept-node__text-box">
-        <p>{text}</p>
+        <p>{children}</p>
       </div>
     </div>
   ); 
