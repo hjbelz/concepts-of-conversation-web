@@ -1,7 +1,7 @@
 import React from 'react';
 import './ConceptNode.css';
 
-interface ConceptNodeProps {
+export interface ConceptNodeProps {
   title: string;
   titleVariant?: string;
   subtitle: string;
@@ -9,8 +9,7 @@ interface ConceptNodeProps {
   children: React.ReactNode;
 }
 
-const ConceptNode: React.FC<ConceptNodeProps> = ({ title, titleVariant, subtitle, isKeyConcept, children }) => {
-
+const ConceptNode = ({ title, titleVariant, subtitle, isKeyConcept, children }: ConceptNodeProps): React.JSX.Element => {
   return (
     <div className={`concept-node${isKeyConcept ? ' concept-node--key-concept' : ''}`}>
       <div className="concept-node__header-box">
@@ -21,7 +20,7 @@ const ConceptNode: React.FC<ConceptNodeProps> = ({ title, titleVariant, subtitle
         <p>{children}</p>
       </div>
     </div>
-  ); 
-}; 
+  );
+};
 
 export default ConceptNode;
