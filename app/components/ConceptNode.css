@@ -2,10 +2,13 @@
  * Styles for the ConceptNode component.
  */
 
-.concept-node {
+.concept-node--observable,
+.concept-node--cognitive,
+.concept-node--trouble,
+.concept-node--observable--key-concept,
+.concept-node--cognitive--key-concept {  
   font-family: "Noto Sans", serif;
   line-height: normal;
-  color: #171D33;
 
   display: flex;
   width: 440px;
@@ -14,57 +17,126 @@
   align-items: flex-start;
 
   border-radius: 8px;
+}
+
+/* Key Concept: Drop shadow */
+.concept-node--observable--key-concept,
+.concept-node--cognitive--key-concept {
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.24);
+}
+
+.concept-node--observable {
   background-color: #94A6E5;
+  color: #171D33;
+}
+
+.concept-node--cognitive {
+  background-color: #74B291;
+  color: #091F13;
+}
+
+.concept-node--trouble {
+  background-color: #E59597;
+  color: #331212;
+}
+
+.concept-node--observable--key-concept {
+  background-color: #243983;
+}
+
+.concept-node--cognitive--key-concept {
+  background-color: #185A37;
 }
 
 .concept-node__header-box {
   padding: 8px;
 }
 
-.concept-node__text-box {
+.concept-node__text-box--observable,
+.concept-node__text-box--cognitive,
+.concept-node__text-box--trouble,
+.concept-node__text-box--observable--key-concept,
+.concept-node__text-box--cognitive--key-concept {
   display: flex;
   padding: 8px;
   align-items: center;
   gap: 12px;
   align-self: stretch;
-  border-radius: 0px 0px 8px 8px;  
+  border-radius: 0px 0px 8px 8px;
+  font-size: 14px;
+}
+
+.concept-node__text-box--observable,
+.concept-node__text-box--observable--key-concept {
   background-color: #CCD7FF;
 }
 
-.concept-node__text-box p {
-  color: #171D33;
-
-  font-size: 14px;
-  font-weight: 400;  
-  font-style: normal;
+.concept-node__text-box--cognitive,
+.concept-node__text-box--cognitive--key-concept {
+  background-color: #A3CCB6;
 }
 
-.concept-node h2 {
-  color: #2E3A66;
+.concept-node__text-box--trouble {
+  background-color: #F2C2C3;
+}
 
-  font-size: 20px;
+.concept-node__title--observable,
+.concept-node__title--cognitive,
+.concept-node__title--trouble,
+.concept-node__title--observable--key-concept,
+.concept-node__title--cognitive--key-concept {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   letter-spacing: 0.15px;
-  
+}
+
+.concept-node__title--observable {
+  font-size: 20px;
+  color: #2E3A66;
+}
+
+.concept-node__title--cognitive {
+  font-size: 20px;
+  color: #20402F;
+}
+
+.concept-node__title--trouble {
+  font-size: 20px;
+  color: #593132;
+}
+
+.concept-node__title--observable--key-concept,
+.concept-node__title--cognitive--key-concept {
+  font-size: 24px;
+  color: #fff;
 }
 
 .concept-node__title-variant {
-  color: #171D33;
-
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
 }
 
-.concept-node h3 {
-  color: #171D33;
-  
+.concept-node__title-variant--observable--key-concept,
+.concept-node__title-variant--cognitive--key-concept {
+  color: #fff;
+}
+
+.concept-node__subtitle--observable,
+.concept-node__subtitle--cognitive,
+.concept-node__subtitle--trouble,
+.concept-node__subtitle--observable--key-concept,
+.concept-node__subtitle--cognitive--key-concept {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   font-stretch: 62.5%;
   letter-spacing: 0.15px;
+}
+
+.concept-node__subtitle--observable--key-concept,
+.concept-node__subtitle--cognitive--key-concept {
+  color: #fff;
 }
