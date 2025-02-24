@@ -50,6 +50,11 @@
 
 .concept-node__header-box {
   padding: 8px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
 }
 
 .concept-node__text-box--observable,
@@ -78,6 +83,13 @@
 
 .concept-node__text-box--trouble {
   background-color: #F2C2C3;
+}
+
+.concept-node__title-rows {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 0px;
 }
 
 .concept-node__title--observable,
