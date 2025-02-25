@@ -6,7 +6,7 @@
 .concept-node--cognitive,
 .concept-node--trouble,
 .concept-node--observable--key-concept,
-.concept-node--cognitive--key-concept {  
+.concept-node--cognitive--key-concept {
   font-family: "Noto Sans", serif;
   line-height: normal;
 
@@ -22,21 +22,23 @@
 /* Key Concept: Drop shadow */
 .concept-node--observable--key-concept,
 .concept-node--cognitive--key-concept {
-  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.12), 0px 3px 4px 0px rgba(0, 0, 0, 0.24);
+  box-shadow:
+    3px 3px 6px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.24);
 }
 
 .concept-node--observable {
-  background-color: #94A6E5;
-  color: #171D33;
+  background-color: #94a6e5;
+  color: #171d33;
 }
 
 .concept-node--cognitive {
-  background-color: #74B291;
-  color: #091F13;
+  background-color: #74b291;
+  color: #091f13;
 }
 
 .concept-node--trouble {
-  background-color: #E59597;
+  background-color: #e59597;
   color: #331212;
 }
 
@@ -45,7 +47,7 @@
 }
 
 .concept-node--cognitive--key-concept {
-  background-color: #185A37;
+  background-color: #185a37;
 }
 
 .concept-node__header-box {
@@ -73,16 +75,16 @@
 
 .concept-node__text-box--observable,
 .concept-node__text-box--observable--key-concept {
-  background-color: #CCD7FF;
+  background-color: #ccd7ff;
 }
 
 .concept-node__text-box--cognitive,
 .concept-node__text-box--cognitive--key-concept {
-  background-color: #A3CCB6;
+  background-color: #a3ccb6;
 }
 
 .concept-node__text-box--trouble {
-  background-color: #F2C2C3;
+  background-color: #f2c2c3;
 }
 
 .concept-node__title-rows {
@@ -105,12 +107,12 @@
 
 .concept-node__title--observable {
   font-size: 20px;
-  color: #2E3A66;
+  color: #2e3a66;
 }
 
 .concept-node__title--cognitive {
   font-size: 20px;
-  color: #20402F;
+  color: #20402f;
 }
 
 .concept-node__title--trouble {
