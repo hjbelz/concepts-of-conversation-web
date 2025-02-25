@@ -3,16 +3,15 @@ import ConceptNode, { Icons, Phenomenon } from "~/components/concepts/ConceptNod
 export function Welcome() {
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
-      <ConceptNode
-        phenomenon={Phenomenon.Observable}
-        isKeyConcept={false}
-        icon="Project"
-        title="Sub Concept"
-        titleVariant="TEST"
-        subtitle="Some crisp description">
-        Participants in a conversation are often engaged in a (social) activity, potentially aimed at achieving a specific outcome or goal. In this context, 'activity' can refer to anything from playing a board game or eating breakfast to making an emergency call or standing in court. Depending on the nature of the activity, some or all of it may be accomplished solely through talk.
-      </ConceptNode>
+      <div className="flex"><h1 className="text-2xl font-bold">Welcome to Concepts of Conversation</h1></div>
+      
+      <div className="flex"><p className="mt-2">See an overview of the <a href="/ca-concepts-overview" className="text-blue-500 underline">concepts of conversation analysis</a></p></div>
+
+      <div className="flex mt-4">
+        <p className="text-gray-600">Discover how these concepts can improve your understanding of conversations.</p>
+      </div>
     </main>
   );
 }
 
+  
