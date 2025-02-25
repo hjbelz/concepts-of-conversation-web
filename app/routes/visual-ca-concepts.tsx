@@ -1,4 +1,4 @@
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/visual-ca-concepts";
 import { CAConceptsOverview } from "../ca-concepts/ca-concepts-overview";
 
 export function meta({}: Route.MetaArgs) {
@@ -8,6 +8,6 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+export default function VisualCAConcepts() {
   return <CAConceptsOverview />;
 }

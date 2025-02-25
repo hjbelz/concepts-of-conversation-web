@@ -154,3 +154,13 @@
 .concept-node__subtitle--cognitive--key-concept {
   color: #fff;
 }
+
+.concept-node__emca-link:hover {
+  .concept-node__title--observable,
+  .concept-node__title--cognitive,
+  .concept-node__title--trouble,
+  .concept-node__title--observable--key-concept,
+  .concept-node__title--cognitive--key-concept {
+    text-decoration: underline;
+  }
+}
