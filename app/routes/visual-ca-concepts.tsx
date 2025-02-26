@@ -1,5 +1,5 @@
 import type { Route } from "./+types/visual-ca-concepts";
-import { CAConceptsOverview } from "../ca-concepts/ca-concepts-overview";
+import { CAConceptsOverviewSequence } from "../ca-concepts/ca-concepts-row-sequence";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +9,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function VisualCAConcepts() {
-  return <CAConceptsOverview />;
+  return <CAConceptsOverviewSequence />;
 }
