@@ -18,7 +18,7 @@ export const ArrowDown = ({
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         position: "absolute",
         left: x,
         top: y,
@@ -40,7 +40,7 @@ export const ArrowDown = ({
       </svg>
       <div
         style={{
-          textAlign: "center",
+          textAlign: "left",
           marginTop: "4px",
           fontStyle: "italic",
           color: "#608DCC",

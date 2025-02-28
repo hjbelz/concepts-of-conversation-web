@@ -1,5 +1,5 @@
 import ArrowDown from "~/components/concepts/arrows/ArrowDown";
- import ArrowLeft from "~/components/concepts/arrows/ArrowLeft";
+import ArrowLeft from "~/components/concepts/arrows/ArrowLeft";
 import ArrowRight from "~/components/concepts/arrows/ArrowRight";
 import ArrowUp from "~/components/concepts/arrows/ArrowUp";
 import ConceptNode, { Phenomenon } from "~/components/concepts/ConceptNode";
@@ -8,55 +8,88 @@ import SpeakerColumnLabel from "~/components/concepts/speaker/SpeakerColumnLabel
 export function CAConceptsOverviewColTurn() {
   return (
     <div className="relative h-[1301px] w-[1648px] bg-gray-100">
-
       <SpeakerColumnLabel colIndex={2} y={60}>
         Current Speaker
       </SpeakerColumnLabel>
 
       <SpeakerColumnLabel colIndex={3} y={60} icon="Recipients">
-        Current Recipients 
+        Current Recipients
       </SpeakerColumnLabel>
 
-
       {/* Turn <= Turn Taking */}
-      <ArrowLeft x={1076} y={572}>
+      <ArrowLeft x={1076} y={595}>
         observes
-        <br /> 
+        <br />
         production of
         <br />
-        the current <b>turn</b> 
+        the current <b>Turn</b>
       </ArrowLeft>
+
+      {/*  Turn Taking => TRP */}
+      <ArrowDown x={1380} y={752}>
+        monitors the current
+        <br />
+        <b>Turn</b> for <b>TRP</b>s
+      </ArrowDown>
 
       {/*  Action Formation <= Turn Design */}
       <ArrowLeft x={492} y={230}>
-        serves to
+        determines the
         <br />
-        achieve 
-        <br />
-        the Action Formation 
+        <b>Action Formation</b>
       </ArrowLeft>
 
-      {/* Turn Design => Projection */}
+      {/*  Action Formation => Action */}
+      <ArrowDown x={177} y={330} length={456}>
+        aims to recognizably
+        <br />
+        produce the
+        <br />
+        intended Action
+      </ArrowDown>
+
+      {/* Turn Design <= Projection */}
       <ArrowLeft x={1076} y={230}>
         enables
         <br />
         early start of
         <br />
-        <b>turn design</b>
+        <b>Turn Design</b>
       </ArrowLeft>
 
+      {/*  Projection => Turn-Taking */}
+      <ArrowDown x={1380} y={368} length={168}>
+        informs the
+        <br />
+        <b>Turn-Taking</b>
+      </ArrowDown>
+
+      {/*  Turn Design => Turn */}
+      <ArrowDown x={800} y={460}>
+        happens before
+        <br />
+        and during the <b>Turn</b>
+      </ArrowDown>
+
+      {/*  Turn => TCU */}
+      <ArrowDown x={800} y={696} length={140}>
+        is comprised of
+        <br />
+        one or more <b>TCU</b>s
+      </ArrowDown>
+
       {/* TCU => TRP */}
-      <ArrowRight x={1076} y={838}>
-        can mark a<br/>
+      <ArrowRight x={1076} y={895}>
+        can mark a<br />
         potential <b>TRP</b>
       </ArrowRight>
 
       {/* Action <= TCU  */}
-      <ArrowLeft x={492} y={838}>
-        constitues one<br/>
-        or more <b>Actions</b>
+      <ArrowLeft x={492} y={895}>
+        constitutes one
+        <br />
+        or more <b>Action</b>s
       </ArrowLeft>
-
 
       <ConceptNode
         title="Action Formation"
@@ -111,7 +144,7 @@ export function CAConceptsOverviewColTurn() {
         icon="Turn"
         emcaUrl="https://emcawiki.net/Turn"
         colIndex={2}
-        y={561}
+        y={584}
       >
         Some concise information
       </ConceptNode>
@@ -123,7 +156,7 @@ export function CAConceptsOverviewColTurn() {
         isKeyConcept={false}
         emcaUrl="https://emcawiki.net/Turn-Taking"
         colIndex={3}
-        y={561}
+        y={584}
       >
         The organization of turn-taking enables frequent and fluent speaker
         changes with minimized gaps and overlap. The next speaker can either be
@@ -139,7 +172,7 @@ export function CAConceptsOverviewColTurn() {
         isKeyConcept={false}
         emcaUrl="https://emcawiki.net/Transition_Relevance_Place"
         colIndex={3}
-        y={827}
+        y={880}
       >
         Some concise information
       </ConceptNode>
@@ -152,7 +185,7 @@ export function CAConceptsOverviewColTurn() {
         icon="Action"
         emcaUrl="https://emcawiki.net/Action"
         colIndex={1}
-        y={827}
+        y={880}
       >
         Saying words is not merely exchanging information. Making a request,
         offering help, or rejecting an invitation are all (social) actions
@@ -171,7 +204,7 @@ export function CAConceptsOverviewColTurn() {
         icon="TCU"
         emcaUrl="https://emcawiki.net/Turn_Constructional_Unit"
         colIndex={2}
-        y={827}
+        y={880}
       >
         Some concise information
       </ConceptNode>
