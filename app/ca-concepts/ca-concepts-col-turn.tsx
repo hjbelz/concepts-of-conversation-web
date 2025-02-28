@@ -1,8 +1,20 @@
+import ArrowDown from "~/components/concepts/ArrowDown";
+import ArrowLeft from "~/components/concepts/ArrowLeft";
+import ArrowRight from "~/components/concepts/ArrowRight";
+import ArrowUp from "~/components/concepts/ArrowUp";
 import ConceptNode, { Phenomenon } from "~/components/concepts/ConceptNode";
 
 export function CAConceptsOverviewColTurn() {
   return (
     <div className="relative h-[1301px] w-[1648px] bg-gray-100">
+
+      <ArrowLeft x={10} y={60} length={100} />
+      <ArrowRight x={10} y={120} length={300} />
+      <ArrowUp x={510} y={180} length={100} />
+      <ArrowDown x={550} y={360} length={360} />
+
+
+
       <ConceptNode
         title="Action Formation"
         subtitle="The particular way a recognizable action is 'expressed'"
