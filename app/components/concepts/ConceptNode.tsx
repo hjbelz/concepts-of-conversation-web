@@ -34,6 +34,8 @@ export enum Phenomenon {
   Trouble = "trouble",
 }
 
+const colPositions = [40, 624, 1208];
+
 export interface ConceptNodeProps {
   phenomenon?: Phenomenon;
   title: string;
@@ -42,7 +44,7 @@ export interface ConceptNodeProps {
   isKeyConcept?: boolean;
   icon?: string;
   emcaUrl?: string;
-  x: number;
+  colIndex: 1 | 2 | 3;
   y: number;
   children: React.ReactNode;
 }
@@ -55,7 +57,7 @@ const ConceptNode = ({
   titleVariant,
   subtitle,
   emcaUrl,
-  x,
+  colIndex,
   y,
   children,
 }: ConceptNodeProps): React.JSX.Element => {
@@ -100,7 +102,7 @@ const ConceptNode = ({
   }
 
   return (
-    <div className={`concept-node--${stateSuffix}`} style={{position: "absolute", left: x, top: y}}>
+    <div className={`concept-node--${stateSuffix}`} style={{position: "absolute", left: colPositions[colIndex-1], top: y}}>
       {headerBox}
       <div className={`concept-node__text-box--${stateSuffix}`}>
         <p>{children}</p>

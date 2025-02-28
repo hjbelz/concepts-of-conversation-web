@@ -99,6 +99,7 @@
 .concept-node__title--trouble,
 .concept-node__title--observable--key-concept,
 .concept-node__title--cognitive--key-concept {
+  font-size: 20px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -106,30 +107,31 @@
 }
 
 .concept-node__title--observable {
-  font-size: 20px;
   color: #2e3a66;
 }
 
 .concept-node__title--cognitive {
-  font-size: 20px;
   color: #20402f;
 }
 
 .concept-node__title--trouble {
-  font-size: 20px;
   color: #593132;
 }
 
 .concept-node__title--observable--key-concept,
 .concept-node__title--cognitive--key-concept {
-  font-size: 24px;
   color: #fff;
 }
 
-.concept-node__title-variant {
+
+.concept-node__title-variant--observable,
+.concept-node__title-variant--cognitive,
+.concept-node__title-variant--trouble,
+.concept-node__title-variant--observable--key-concept,
+.concept-node__title-variant--cognitive--key-concept {
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .concept-node__title-variant--observable--key-concept,

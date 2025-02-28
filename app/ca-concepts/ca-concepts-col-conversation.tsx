@@ -10,7 +10,7 @@ export function CAConceptsOverviewColConversation() {
         phenomenon={Phenomenon.Observable}
         isKeyConcept={false}
         emcaUrl="https://emcawiki.net/Activity"
-        x={624}
+        colIndex={2}
         y={52}
       >
         Participants in a conversation are often engaged in a (social)
@@ -28,7 +28,7 @@ export function CAConceptsOverviewColConversation() {
         isKeyConcept={true}
         icon="Project"
         emcaUrl="https://emcawiki.net/Conversational_project"
-        x={40}
+        colIndex={1}
         y={364}
       >
         Besides easily recognizable „activities“ (see concept), there are less
@@ -50,7 +50,7 @@ export function CAConceptsOverviewColConversation() {
         isKeyConcept={true}
         icon="Conversation"
         emcaUrl="https://emcawiki.net/Talk-in-interaction"
-        x={624}
+        colIndex={2}
         y={364}
       >
         Natural human conversation unfolds in real time, turn by turn, as a
@@ -66,7 +66,7 @@ export function CAConceptsOverviewColConversation() {
         phenomenon={Phenomenon.Observable}
         isKeyConcept={false}
         emcaUrl="https://emcawiki.net/Overall_structural_organization"
-        x={1208}
+        colIndex={3}
         y={364}
       >
         Examining the 'overall structural organization' of a conversation
@@ -90,7 +90,7 @@ export function CAConceptsOverviewColConversation() {
         isKeyConcept={true}
         icon="Institutional"
         emcaUrl="https://emcawiki.net/Institutional_talk"
-        x={624}
+        colIndex={2}
         y={658}
       >
         Some interactions occur in an “institutional” context, where they are

@@ -9,7 +9,7 @@ export function CAConceptsOverviewColSequence() {
         phenomenon={Phenomenon.Observable}
         isKeyConcept={false}
         emcaUrl="https://emcawiki.net/Sequence_organization"
-        x={624}
+        colIndex={2}
         y={60}
       >
         Some concise information
@@ -21,7 +21,7 @@ export function CAConceptsOverviewColSequence() {
         isKeyConcept={true}
         icon="Sequence"
         emcaUrl="https://emcawiki.net/Sequence"
-        x={624}
+        colIndex={2}
         y={269}
       >
         Some concise information
@@ -32,7 +32,7 @@ export function CAConceptsOverviewColSequence() {
         phenomenon={Phenomenon.Observable}
         isKeyConcept={false}
         emcaUrl="https://emcawiki.net/Preference_organization"
-        x={1208}
+        colIndex={3}
         y={60}
       >
         Some concise information
@@ -44,7 +44,7 @@ export function CAConceptsOverviewColSequence() {
         isKeyConcept={true}
         icon="Intersubjectivity"
         emcaUrl="https://emcawiki.net/Intersubjectivity"
-        x={40}
+        colIndex={1}
         y={491}
       >
         Some concise information
@@ -56,7 +56,7 @@ export function CAConceptsOverviewColSequence() {
         isKeyConcept={true}
         icon="AdjacencyPair"
         emcaUrl="https://emcawiki.net/Adjacency_pair"
-        x={624}
+        colIndex={2}
         y={491}
       >
         Some concise information
@@ -67,7 +67,7 @@ export function CAConceptsOverviewColSequence() {
         phenomenon={Phenomenon.Trouble}
         isKeyConcept={false}
         emcaUrl="https://emcawiki.net/Next-turn_proof_procedure"
-        x={1208}
+        colIndex={3}
         y={491}
       >
         Some concise information
