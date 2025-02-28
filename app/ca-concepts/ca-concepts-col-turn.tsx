@@ -18,6 +18,7 @@ export function CAConceptsOverviewColTurn() {
       </SpeakerColumnLabel>
 
 
+      {/* Turn <= Turn Taking */}
       <ArrowLeft x={1076} y={572}>
         observes
         <br /> 
@@ -26,6 +27,16 @@ export function CAConceptsOverviewColTurn() {
         the current <b>turn</b> 
       </ArrowLeft>
 
+      {/*  Action Formation <= Turn Design */}
+      <ArrowLeft x={492} y={230}>
+        serves to
+        <br />
+        achieve 
+        <br />
+        the Action Formation 
+      </ArrowLeft>
+
+      {/* Turn Design => Projection */}
       <ArrowLeft x={1076} y={230}>
         enables
         <br />
@@ -34,10 +45,18 @@ export function CAConceptsOverviewColTurn() {
         <b>turn design</b>
       </ArrowLeft>
 
+      {/* TCU => TRP */}
       <ArrowRight x={1076} y={838}>
         can mark a<br/>
         potential <b>TRP</b>
       </ArrowRight>
+
+      {/* Action <= TCU  */}
+      <ArrowLeft x={492} y={838}>
+        constitues one<br/>
+        or more <b>Actions</b>
+      </ArrowLeft>
+
 
       <ConceptNode
         title="Action Formation"

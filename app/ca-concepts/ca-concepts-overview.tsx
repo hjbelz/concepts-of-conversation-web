@@ -5,8 +5,14 @@ import { CAConceptsOverviewColTurn } from "./ca-concepts-col-turn";
 import {
   CAConceptsOverviewRow,
   CAConceptsOverviewTitleColumn,
-  CAConceptsOverviewRowSeperator,
+  CAConceptsOverviewRowSeparator,
 } from "./ca-concepts-row";
+
+// Icons of the title columns (level of granularity)
+import ConversationIcon from "./LOD Icon Conversation.png";
+import SequenceIcon from "./LOD Icon Sequence.png";
+import TurnIcon from "./LOD Icon Turn.png";
+import SeqTurnIcon from "./LOD Icon Sequence & Turn.png";
 
 // TEST
 import ActionIcon from "~/components/concepts/icons/Action.svg";
@@ -27,57 +33,57 @@ export default function CAConceptsOverview() {
       </p>
 
       <CAConceptsOverviewRow rowHeight={640}>
-        <div className="flex w-[232px] flex-col items-center justify-center bg-[#F0F6FF] font-black text-gray-600">
-          Level of Detail
+        <div className="flex h-[64px] w-[232px] flex-col items-center justify-center bg-[#C3DCFF] text-[20px] font-black text-[#435977]">
+          Granularity
         </div>
-
-        <div className="flex w-[1648px] flex-col items-center justify-center bg-[#F0F6FF] font-black text-gray-600">
-          Level of Detail
+        <div className="flex h-[64px] w-[1648px] flex-col items-center justify-center bg-[#C3DCFF] text-[20px] font-black text-[#435977]">
+          Structures and Patterns
         </div>
       </CAConceptsOverviewRow>
 
       <CAConceptsOverviewRow rowHeight={1044}>
         <CAConceptsOverviewTitleColumn
+          superText="A complete"
           title="Conversation"
           subText="between two or more participants"
-          image={ActionIcon}
+          image={ConversationIcon}
           imageAltText="Conversation"
         />
         <CAConceptsOverviewColConversation />
       </CAConceptsOverviewRow>
 
-      <CAConceptsOverviewRowSeperator />
+      <CAConceptsOverviewRowSeparator />
 
       <CAConceptsOverviewRow rowHeight={657}>
         <CAConceptsOverviewTitleColumn
           superText="A single"
           title="Sequence"
-          subText="(a coherent string of utterances"
-          image={ActionIcon}
+          subText="(a coherent string of utterances)"
+          image={SequenceIcon}
           imageAltText="Conversation"
         />
         <CAConceptsOverviewColSequence />
       </CAConceptsOverviewRow>
 
-      <CAConceptsOverviewRowSeperator />
+      <CAConceptsOverviewRowSeparator />
 
       <CAConceptsOverviewRow rowHeight={445}>
         <CAConceptsOverviewTitleColumn
-          superText="Affecting"
-          title="Both levels"
-          image={ActionIcon}
+          superText="Affecting both levels,"
+          title="Sequence & Turn"
+          image={SeqTurnIcon}
           imageAltText="Affecting both - sequence and turn"
         />
         <CAConceptsOverviewColSeqTurn />
       </CAConceptsOverviewRow>
 
-      <CAConceptsOverviewRowSeperator />
+      <CAConceptsOverviewRowSeparator />
 
       <CAConceptsOverviewRow rowHeight={1301}>
         <CAConceptsOverviewTitleColumn
           superText="A single"
-          title="Utterance"
-          image={ActionIcon}
+          title="Turn"
+          image={TurnIcon}
           imageAltText="A single turn at talk"
         />
         <CAConceptsOverviewColTurn />
