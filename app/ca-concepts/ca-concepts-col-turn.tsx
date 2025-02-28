@@ -1,19 +1,29 @@
 import ArrowDown from "~/components/concepts/arrows/ArrowDown";
-import ArrowLeft from "~/components/concepts/arrows/ArrowLeft";
+ import ArrowLeft from "~/components/concepts/arrows/ArrowLeft";
 import ArrowRight from "~/components/concepts/arrows/ArrowRight";
 import ArrowUp from "~/components/concepts/arrows/ArrowUp";
 import ConceptNode, { Phenomenon } from "~/components/concepts/ConceptNode";
+import SpeakerColumnLabel from "~/components/concepts/speaker/SpeakerColumnLabel";
 
 export function CAConceptsOverviewColTurn() {
   return (
     <div className="relative h-[1301px] w-[1648px] bg-gray-100">
+
+      <SpeakerColumnLabel colIndex={2} y={60}>
+        Current Speaker
+      </SpeakerColumnLabel>
+
+      <SpeakerColumnLabel colIndex={3} y={60} icon="Recipients">
+        Current Recipients 
+      </SpeakerColumnLabel>
+
 
       <ArrowLeft x={1076} y={572}>
         observes
         <br /> 
         production of
         <br />
-        current turn
+        the current <b>turn</b> 
       </ArrowLeft>
 
       <ArrowLeft x={1076} y={230}>
@@ -21,8 +31,13 @@ export function CAConceptsOverviewColTurn() {
         <br />
         early start of
         <br />
-        turn design
+        <b>turn design</b>
       </ArrowLeft>
+
+      <ArrowRight x={1076} y={838}>
+        can mark a<br/>
+        potential <b>TRP</b>
+      </ArrowRight>
 
       <ConceptNode
         title="Action Formation"
