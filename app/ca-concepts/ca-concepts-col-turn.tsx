@@ -1,19 +1,28 @@
-import ArrowDown from "~/components/concepts/ArrowDown";
-import ArrowLeft from "~/components/concepts/ArrowLeft";
-import ArrowRight from "~/components/concepts/ArrowRight";
-import ArrowUp from "~/components/concepts/ArrowUp";
+import ArrowDown from "~/components/concepts/arrows/ArrowDown";
+import ArrowLeft from "~/components/concepts/arrows/ArrowLeft";
+import ArrowRight from "~/components/concepts/arrows/ArrowRight";
+import ArrowUp from "~/components/concepts/arrows/ArrowUp";
 import ConceptNode, { Phenomenon } from "~/components/concepts/ConceptNode";
 
 export function CAConceptsOverviewColTurn() {
   return (
     <div className="relative h-[1301px] w-[1648px] bg-gray-100">
 
-      <ArrowLeft x={10} y={60} length={100} />
-      <ArrowRight x={10} y={120} length={300} />
-      <ArrowUp x={510} y={180} length={100} />
-      <ArrowDown x={550} y={360} length={360} />
+      <ArrowLeft x={1076} y={572}>
+        observes
+        <br /> 
+        production of
+        <br />
+        current turn
+      </ArrowLeft>
 
-
+      <ArrowLeft x={1076} y={230}>
+        enables
+        <br />
+        early start of
+        <br />
+        turn design
+      </ArrowLeft>
 
       <ConceptNode
         title="Action Formation"
