@@ -1,7 +1,7 @@
+import AngledArrowRight from "~/components/concepts/arrows/AngledArrowRight";
 import ArrowDown from "~/components/concepts/arrows/ArrowDown";
 import ArrowLeft from "~/components/concepts/arrows/ArrowLeft";
 import ArrowRight from "~/components/concepts/arrows/ArrowRight";
-import ArrowUp from "~/components/concepts/arrows/ArrowUp";
 import ConceptNode, { Phenomenon } from "~/components/concepts/ConceptNode";
 import SpeakerColumnLabel from "~/components/concepts/speaker/SpeakerColumnLabel";
 
@@ -40,7 +40,7 @@ export function CAConceptsOverviewColTurn() {
       </ArrowLeft>
 
       {/*  Action Formation => Action */}
-      <ArrowDown x={177} y={330} length={456}>
+      <ArrowDown x={177} y={330} length={504}>
         aims to recognizably
         <br />
         produce the
@@ -90,6 +90,28 @@ export function CAConceptsOverviewColTurn() {
         <br />
         or more <b>Action</b>s
       </ArrowLeft>
+
+      {/* TCU => Action Ascription */}
+      <AngledArrowRight x={818} y={990} vLength={72} hLength={336}>
+        recipients continuously attempt to
+        <br />
+        ascribe <b>Action</b>s to the TCUs in production
+      </AngledArrowRight>
+
+      {/* Action Ascription => Placeholders for Projection & Turn-Taking */}
+      <div style={{ position: "absolute", left: 1280, top: 1148}}>
+        <AngledArrowRight x={0} y={0} vLength={48} hLength={86}>
+          informs
+        </AngledArrowRight>
+        <div style={{ display: "flex", flexDirection: "column", gap: "8px", position: "absolute", left: 140, top: 23 }}>
+          <div className="text-base font-extrabold text-[#20402f]" style={{ borderRadius: '8px', background: '#74B291', width: '198px', height: '32px', textAlign: 'center', paddingTop: '4px' }}>
+            Projection
+          </div>
+          <div className="text-base font-extrabold text-[#2e3a66]" style={{ borderRadius: '8px', background: '#94A6E5', width: '198px', height: '32px', textAlign: 'center', paddingTop: '4px' }}>
+            Turn-Taking
+          </div>
+        </div>
+      </div>
 
       <ConceptNode
         title="Action Formation"
