@@ -67,7 +67,7 @@ export default function CAConceptsOverview() {
 
       <CAConceptsOverviewRowSeparator />
 
-      <CAConceptsOverviewRow rowHeight={445}>
+      <CAConceptsOverviewRow rowHeight={524}>
         <CAConceptsOverviewTitleColumn
           superText="Affecting both levels,"
           title="Sequence & Turn"

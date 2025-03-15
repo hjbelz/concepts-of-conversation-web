@@ -18,7 +18,7 @@ export const ArrowUp = ({
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         position: "absolute",
         left: x,
         top: y,
@@ -42,8 +42,9 @@ export const ArrowUp = ({
       </svg>
       <div
         style={{
-          textAlign: "center",
-          marginTop: "4px",
+          alignSelf: " flex-end",
+          textAlign: "left",
+          marginBottom: "4px",
           fontStyle: "italic",
           color: "#608DCC",
           fontWeight: "300",
