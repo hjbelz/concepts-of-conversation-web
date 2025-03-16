@@ -1,7 +1,7 @@
-import React from 'react';
 import ArrowDown from '~/components/concepts/arrows/ArrowDown';
 import ArrowLeft from '~/components/concepts/arrows/ArrowLeft';
 import ArrowRight from '~/components/concepts/arrows/ArrowRight';
+import SpecializationDown from '~/components/concepts/arrows/SpecializationDown';
 import ConceptNode, { Phenomenon } from "~/components/concepts/ConceptNode";
 
 export function CAConceptsOverviewColConversation() {
@@ -23,10 +23,17 @@ export function CAConceptsOverviewColConversation() {
 
       {/* Talk-in-Interaction <= Overall Structural Organization */}
       <ArrowLeft x={1076} y={372}>
-        structures and<br/> 
+        structures and<br />
         informs the<br />
         <b>Talk</b>
       </ArrowLeft>
+
+      {/*  Talk-in-Interaction => Institutional Talk */}
+      <SpecializationDown x={800} y={548} length={76}>
+        A special class of <b>Talk</b>:<br />
+        Interactions in constrained<br />
+        <b>"institutional"</b> contexts
+      </SpecializationDown>
 
       <ConceptNode
         title="Activity"

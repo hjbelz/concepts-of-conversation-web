@@ -69,7 +69,7 @@ export default function CAConceptsOverview() {
 
       <CAConceptsOverviewRow rowHeight={524}>
         <CAConceptsOverviewTitleColumn
-          superText="Affecting both levels,"
+          superText="Affecting both,"
           title="Sequence & Turn"
           image={SeqTurnIcon}
           imageAltText="Affecting both - sequence and turn"
