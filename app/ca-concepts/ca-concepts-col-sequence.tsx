@@ -1,8 +1,22 @@
+import ArrowDown from "~/components/concepts/arrows/ArrowDown";
 import ConceptNode, { Phenomenon } from "~/components/concepts/ConceptNode";
 
 export function CAConceptsOverviewColSequence() {
   return (
     <div className="relative h-[657px] w-[1648px] bg-gray-100">
+      
+      {/*  Turn Design => Turn */}
+      <ArrowDown x={800} y={168}>
+        happens before
+        <br />
+        and during the <b>Turn</b>
+      </ArrowDown>
+      
+      
+      
+      
+      
+      
       <ConceptNode
         title="Sequence Organization"
         subtitle="Some Subtitle"

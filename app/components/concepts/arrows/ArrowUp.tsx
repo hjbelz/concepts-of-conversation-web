@@ -10,7 +10,7 @@ export interface ArrowUpProps {
 export const ArrowUp = ({
   x,
   y,
-  length = 85,
+  length = 62,
   children,
 }: ArrowUpProps): React.JSX.Element => {
   const viewBoxHeight = length + 34; // Adjust viewBox height based on length

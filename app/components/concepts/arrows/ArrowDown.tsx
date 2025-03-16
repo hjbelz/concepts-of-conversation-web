@@ -10,7 +10,7 @@ export interface ArrowDownProps {
 export const ArrowDown = ({
   x,
   y,
-  length = 85,
+  length = 62,
   children,
 }: ArrowDownProps): React.JSX.Element => {
   const viewBoxHeight = length + 34; // Adjust viewBox height based on length
