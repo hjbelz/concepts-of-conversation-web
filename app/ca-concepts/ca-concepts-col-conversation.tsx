@@ -1,9 +1,33 @@
 import React from 'react';
+import ArrowDown from '~/components/concepts/arrows/ArrowDown';
+import ArrowLeft from '~/components/concepts/arrows/ArrowLeft';
+import ArrowRight from '~/components/concepts/arrows/ArrowRight';
 import ConceptNode, { Phenomenon } from "~/components/concepts/ConceptNode";
 
 export function CAConceptsOverviewColConversation() {
   return (
     <div className="relative h-[1044px] w-[1648px] bg-gray-100">
+
+      {/*  Activity => Talk-in-Interaction */}
+      <ArrowDown x={800} y={255}>
+        frames or<br />
+        shapes the <b>Talk</b>
+      </ArrowDown>
+
+      {/* Conversational Project => Talk-in-Interaction */}
+      <ArrowRight x={492} y={372}>
+        influnces the<br />
+        course of the<br />
+        <b>Talk</b>
+      </ArrowRight>
+
+      {/* Talk-in-Interaction <= Overall Structural Organization */}
+      <ArrowLeft x={1076} y={372}>
+        structures and<br/> 
+        informs the<br />
+        <b>Talk</b>
+      </ArrowLeft>
+
       <ConceptNode
         title="Activity"
         subtitle="Some coordinated undertaking providing coherence to an interaction"
@@ -61,7 +85,7 @@ export function CAConceptsOverviewColConversation() {
       </ConceptNode>
 
       <ConceptNode
-        title="Overall structural organization"
+        title="Overall Structural Organization"
         subtitle="Macro structures of a single occasion of talk"
         phenomenon={Phenomenon.Observable}
         isKeyConcept={false}
