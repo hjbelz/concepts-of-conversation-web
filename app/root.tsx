@@ -36,6 +36,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+
+        <footer className="pr-4 pl-4 pt-8 pb-4 text-gray-600 text-sm">
+          <p {...{ "xmlns:cc": "http://creativecommons.org/ns#", "xmlns:dct": "http://purl.org/dc/terms/" }}>
+            <a property="dct:title" rel="cc:attributionURL" href="http://concepts-of-conversation.org/">Concepts of Conversation</a> by <a className="text-sky-600" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/hansjoachimbelz/">Hans-Joachim Belz</a> is licensed under&nbsp;
+            <a className="text-sky-600" href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style={{ display: "inline-block" }}>CC BY-ND 4.0
+            <img style={{ height: "22px", marginLeft: "8px", verticalAlign: "text-bottom", display: "inline" }} src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="" />
+            <img style={{ height: "22px", marginLeft: "3px", verticalAlign: "text-bottom", display: "inline" }} src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="" />
+            <img style={{ height: "22px", marginLeft: "3px", verticalAlign: "text-bottom", display: "inline" }} src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="" />
+            </a></p>
+        </footer>
       </body>
     </html>
   );
